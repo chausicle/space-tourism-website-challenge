@@ -1,0 +1,58 @@
+body {
+  height: 100vh;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Bellefair", serif;
+  font-size: 9.375rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Bellefiar", serif;
+  font-size: 6.25rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Bellefair", serif;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Bellefair", serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+h5 {
+  color: #d0d6f9;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 4.75px;
+  text-transform: uppercase;
+}
+
+.subheading1 {
+  font-family: "Bellefair", serif;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+
+.subheading2 {
+  letter-spacing: 2.35px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.nav-text {
+  letter-spacing: 2.7px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
