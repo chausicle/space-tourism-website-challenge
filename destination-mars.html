@@ -1,37 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/destination.css" />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  01 Pick your destination
-
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Mars
-
-  Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, 
-  the tallest planetary mountain in our solar system. It’s two and a half times 
-  the size of Everest!
-
-  Avg. distance
-  225 mil. km
-
-  Est. travel time
-  9 months
-</body>
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div>
+      <svg
+        class="logo"
+        xmlns="http://www.w3.org/2000/svg"
+        width="48"
+        height="48"
+      >
+        <g fill="none" fill-rule="evenodd">
+          <circle cx="24" cy="24" r="24" fill="#FFF" />
+          <path
+            fill="#0B0D17"
+            d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"
+          />
+        </g>
+      </svg>
+      <hr class="nav-hr" />
+      <div class="nav-bar">
+        <a class="nav-text" href="index.html">
+          <span><strong class="nav-number">00</strong> Home</span>
+        </a>
+        <a class="nav-text nav-active" href="destination-moon.html">
+          <span><strong class="nav-number">01</strong> Destination</span>
+        </a>
+        <a class="nav-text" href="crew-commander.html">
+          <span><strong class="nav-number">02</strong> Crew</span>
+        </a>
+        <a class="nav-text" href="technology-vehicle.html">
+          <span><strong class="nav-number">03</strong> Technology</span>
+        </a>
+      </div>
+    </div>
+    <div class="bottom-container">
+      <div class="section-left">
+        <h5><strong class="header-text">01</strong>Pick your destination</h5>
+        <img
+          class="planet-image"
+          src="assets/destination/image-mars.png"
+          alt="mars"
+        />
+      </div>
+      <div class="section-right">
+        <div class="destination-nav">
+          <a class="destination-nav-text" href="destination-moon.html">
+            <span>Moon</span>
+          </a>
+          <a
+            class="destination-nav-text nav-active"
+            href="destination-mars.html"
+          >
+            <span>Mars</span>
+          </a>
+          <a class="destination-nav-text" href="destination-europa.html">
+            <span>Europa</span>
+          </a>
+          <a class="destination-nav-text" href="destination-titan.html">
+            <span>Titan</span>
+          </a>
+        </div>
+        <h2 class="destination-heading">Mars</h2>
+        <p class="description">
+          Don’t forget to pack your hiking boots. You’ll need them to tackle
+          Olympus Mons, the tallest planetary mountain in our solar system. It’s
+          two and a half times the size of Everest!
+        </p>
+        <hr class="destination-hr" />
+        <div class="bottom-description-container">
+          <div class="distance">
+            <span class="distance-heading">Avg. distance</span>
+            <span class="distance-value">225 mil. km</span>
+          </div>
+          <div class="travel">
+            <span class="travel-heading">Est. travel time</span>
+            <span class="travel-value">9 months</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,37 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/destination.css" />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  01 Pick your destination
-
-  Moon
-  Mars
-  Europa
-  Titan
-
-  Titan
-
-  The only moon known to have a dense atmosphere other than Earth, Titan 
-  is a home away from home (just a few hundred degrees colder!). As a 
-  bonus, you get striking views of the Rings of Saturn.
-
-  Avg. distance
-  1.6 bil. km
-
-  Est. travel time
-  7 years
-</body>
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <div>
+      <svg
+        class="logo"
+        xmlns="http://www.w3.org/2000/svg"
+        width="48"
+        height="48"
+      >
+        <g fill="none" fill-rule="evenodd">
+          <circle cx="24" cy="24" r="24" fill="#FFF" />
+          <path
+            fill="#0B0D17"
+            d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"
+          />
+        </g>
+      </svg>
+      <hr class="nav-hr" />
+      <div class="nav-bar">
+        <a class="nav-text" href="index.html">
+          <span><strong class="nav-number">00</strong> Home</span>
+        </a>
+        <a class="nav-text nav-active" href="destination-moon.html">
+          <span><strong class="nav-number">01</strong> Destination</span>
+        </a>
+        <a class="nav-text" href="crew-commander.html">
+          <span><strong class="nav-number">02</strong> Crew</span>
+        </a>
+        <a class="nav-text" href="technology-vehicle.html">
+          <span><strong class="nav-number">03</strong> Technology</span>
+        </a>
+      </div>
+    </div>
+    <div class="bottom-container">
+      <div class="section-left">
+        <h5><strong class="header-text">01</strong>Pick your destination</h5>
+        <img
+          class="planet-image"
+          src="assets/destination/image-europa.png"
+          alt="europa"
+        />
+      </div>
+      <div class="section-right">
+        <div class="destination-nav">
+          <a class="destination-nav-text" href="destination-moon.html">
+            <span>Moon</span>
+          </a>
+          <a class="destination-nav-text" href="destination-mars.html">
+            <span>Mars</span>
+          </a>
+          <a class="destination-nav-text" href="destination-europa.html">
+            <span>Europa</span>
+          </a>
+          <a
+            class="destination-nav-text nav-active"
+            href="destination-titan.html"
+          >
+            <span>Titan</span>
+          </a>
+        </div>
+        <h2 class="destination-heading">Titan</h2>
+        <p class="description">
+          The only moon known to have a dense atmosphere other than Earth, Titan
+          is a home away from home (just a few hundred degrees colder!). As a
+          bonus, you get striking views of the Rings of Saturn.
+        </p>
+        <hr class="destination-hr" />
+        <div class="bottom-description-container">
+          <div class="distance">
+            <span class="distance-heading">Avg. distance</span>
+            <span class="distance-value">1.6 bil. km</span>
+          </div>
+          <div class="travel">
+            <span class="travel-heading">Est. travel time</span>
+            <span class="travel-value">7 years</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
