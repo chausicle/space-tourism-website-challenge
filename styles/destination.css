@@ -101,6 +101,7 @@ h5 {
   margin: 0 15px;
   position: relative;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .destination-nav-text:hover {
