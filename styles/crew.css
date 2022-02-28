@@ -73,3 +73,56 @@ h5 {
   position: relative;
   top: 15rem;
 }
+
+.crew-heading {
+  font-weight: 400;
+  margin: 0 0 10rem;
+}
+
+.crew-heading-number {
+  font-weight: bold;
+  opacity: 0.25;
+  padding-right: 25px;
+}
+
+.crew-heading-title {
+  margin: 0 0 1.5rem;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.crew-heading-name {
+  margin: 0 0 2rem;
+}
+
+.crew-description {
+  color: #D0D6F9;
+  line-height: 2;
+  width: 444px;
+}
+
+.crew-navbar {
+  margin-top: 8rem;
+}
+
+.crew-nav-link {
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  height: 15px;
+  margin: 0 15px 0;
+  opacity: 0.17;
+  width: 15px;
+} 
+
+.crew-nav-link:first-child {
+  margin: 0 15px 0 0;
+} 
+
+.active {
+  opacity: 1;
+}
+
+.crew-nav-link:hover {
+  opacity: 0.5;
+}
