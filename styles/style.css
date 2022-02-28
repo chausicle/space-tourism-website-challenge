@@ -1,4 +1,5 @@
 body {
+  color: #ffffff;
   height: 100vh;
   font-family: 'Barlow', sans-serif;
   font-size: 1.125rem;
@@ -6,24 +7,28 @@ body {
 }
 
 h1 {
+  color: #ffffff;
   font-family: "Bellefair", serif;
   font-size: 9.375rem;
   text-transform: uppercase;
 }
 
 h2 {
+  color: #ffffff;
   font-family: "Bellefiar", serif;
   font-size: 6.25rem;
   text-transform: uppercase;
 }
 
 h3 {
+  color: #ffffff;
   font-family: "Bellefair", serif;
   font-size: 3.5rem;
   text-transform: uppercase;
 }
 
 h4 {
+  color: #ffffff;
   font-family: "Bellefair", serif;
   font-size: 2rem;
   text-transform: uppercase;
@@ -38,12 +43,14 @@ h5 {
 }
 
 .subheading1 {
+  color: #ffffff;
   font-family: "Bellefair", serif;
   font-size: 1.75rem;
   text-transform: uppercase;
 }
 
 .subheading2 {
+  color: #ffffff;
   letter-spacing: 2.35px;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 0.875rem;
@@ -51,6 +58,7 @@ h5 {
 }
 
 .nav-text {
+  color: #ffffff;
   letter-spacing: 2.7px;
   font-family: "Barlow Condensed", sans-serif;
   font-size: 1rem;

@@ -1,0 +1,69 @@
+body {
+  background: center/cover url("../assets/home/background-home-desktop.jpg");
+  background-attachment: fixed;
+}
+
+.logo {
+  left: 65px;
+  position: absolute;
+  top: 75px;
+}
+
+.nav-hr {
+  border-top: none;
+  position: absolute;
+  top: 90px;
+  right: 795px;
+  z-index: 1;
+  left: 170px;
+}
+
+.nav-bar {
+  display: flex;
+  height: 96px;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  text-align: center;
+  width: 830px;
+}
+
+.nav-bar::before {
+  background: #252537;
+  content: "";
+  filter: blur(1px);
+  height: 96px;
+  opacity: 0.7;
+  position: inherit;
+  width: 830px;
+}
+
+.nav-text {
+  align-items: center;
+  display: flex;
+  margin: 0 25px;
+  position: relative;
+}
+
+.nav-number {
+  margin-right: 5px;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 170px;
+  position: relative;
+  top: 25rem;
+}
+
+h1 {
+  padding-left: 5px;
+}
+
+p.description {
+  color: #D0D6F9;
+  line-height: 2;
+  width: 40%;
+}
