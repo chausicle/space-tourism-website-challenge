@@ -44,10 +44,21 @@ body {
   display: flex;
   margin: 0 25px;
   position: relative;
+  text-decoration: none;
+}
+
+.nav-text:hover {
+  border-top: 3px solid rgba(255, 255, 255, 0);
+  border-bottom: 3px solid rgba(255,255,255,0.5);
 }
 
 .nav-number {
   margin-right: 5px;
+}
+
+.nav-active {
+  border-top: 3px solid rgba(255, 255, 255, 0);
+  border-bottom: 3px solid #ffffff;
 }
 
 .bottom-container {
