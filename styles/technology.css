@@ -1,0 +1,75 @@
+body {
+  background: center/cover
+    url("../assets/technology/background-technology-desktop.jpg");
+  background-attachment: fixed;
+}
+
+h5 {
+  color: #ffffff;
+}
+
+.logo {
+  left: 65px;
+  position: absolute;
+  top: 75px;
+}
+
+.nav-hr {
+  border-top: none;
+  position: absolute;
+  top: 90px;
+  right: 795px;
+  z-index: 1;
+  left: 170px;
+}
+
+.nav-bar {
+  background-color: rgba(255, 255, 255, 0.04);
+  display: flex;
+  height: 96px;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  text-align: center;
+  width: 830px;
+}
+
+.nav-bar::before {
+  background-color: rgba(255, 255, 255, 0.04);
+  content: "";
+  filter: blur(1px);
+  height: 96px;
+  position: inherit;
+  width: 830px;
+}
+
+.nav-text {
+  align-items: center;
+  display: flex;
+  margin: 0 25px;
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-text:hover {
+  border-top: 3px solid rgba(255, 255, 255, 0);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.nav-number {
+  margin-right: 5px;
+}
+
+.nav-active {
+  border-top: 3px solid rgba(255, 255, 255, 0);
+  border-bottom: 3px solid #ffffff;
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 0 170px;
+  position: relative;
+  top: 15rem;
+}
