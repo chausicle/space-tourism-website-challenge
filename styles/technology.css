@@ -67,9 +67,77 @@ h5 {
 }
 
 .bottom-container {
-  display: flex;
   justify-content: space-between;
   padding: 0 0 0 170px;
   position: relative;
   top: 15rem;
+}
+
+.technology-heading {
+  display: block;
+}
+
+.technology-heading-number {
+  opacity: 0.25;
+  padding-right: 25px;
+}
+
+.technology-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.technology-content {
+  margin-top: 100px;
+  display: flex;
+}
+
+.technology-navbar {
+  padding-right: 70px;
+}
+
+.technology-nav {
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  font-family: "Bellefair", serif;
+  font-size: 2rem;
+  height: 80px;
+  justify-content: center;
+  margin-bottom: 50px;
+  text-decoration: none;
+  width: 80px;
+}
+
+.technology-nav:hover {
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.active {
+  background-color: #fff;
+  color: #0b0d17;
+}
+
+.subheading {
+  color: #d0d6f9;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 2.7px;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+}
+
+.terminology-heading {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.terminology-description {
+  color: #d0d6f9;
+  line-height: 2;
+  padding-right: 70px;
+  width: 470px;
 }
