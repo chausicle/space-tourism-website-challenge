@@ -18,6 +18,10 @@ body {
   left: 170px;
 }
 
+.nav-hamburger {
+  visibility: hidden;
+}
+
 .nav-bar {
   background-color: rgba(255, 255, 255, 0.04);
   display: flex;
@@ -115,6 +119,7 @@ p.description {
 @media (max-width: 1080px) {
   body {
     background: center/cover url("../assets/home/background-home-tablet.jpg");
+    background-attachment: fixed;
   }
 
   h1 {
@@ -134,6 +139,10 @@ p.description {
 
   .nav-hr {
     display: none;
+  }
+
+  .nav-hamburger {
+    visibility: hidden;
   }
 
   .nav-bar {
@@ -168,6 +177,54 @@ p.description {
   }
 
   .explore-btn {
+    height: 242px;
     position: inherit;
+    width: 242px;
+  }
+}
+
+@media (max-width: 809px) {
+  body {
+    background: center/cover url("../assets/home/background-home-mobile.jpg");
+    background-attachment: fixed;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  .nav-hamburger {
+    position: absolute;
+    right: 35px;
+    top: 38px;
+    visibility: visible;
+  }
+
+  .nav-bar {
+    visibility: hidden;
+  }
+
+  .bottom-container {
+    padding: 0 25px;
+    top: 115px;
+  }
+
+  p.description {
+    font-size: 0.9375rem;
+    line-height: 1.5625;
+    width: 100%;
+  }
+
+  .explore-btn {
+    height: 150px;
+    width: 150px;
+  }
+
+  .explore-text {
+    font-size: 1.25rem;
   }
 }
