@@ -117,6 +117,16 @@ p.description {
     background: center/cover url("../assets/home/background-home-tablet.jpg");
   }
 
+  h1 {
+    margin-top: 0;
+    margin-bottom: 35px;
+    padding-left: 0;
+  }
+
+  h5 {
+    margin-bottom: 25px;
+  }
+
   .logo {
     top: 25px;
     left: 35px;
@@ -130,7 +140,34 @@ p.description {
     top: 0;
     width: 65%;
   }
+
   .nav-bar:before {
     width: 100%;
+  }
+
+  .nav-number {
+    display: none;
+  }
+
+  .bottom-container {
+    display: block;
+    top: 160px;
+    text-align: center;
+  }
+
+  p.description {
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .explore-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+  }
+
+  .explore-btn {
+    position: inherit;
   }
 }
