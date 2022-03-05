@@ -22,6 +22,14 @@ body {
   visibility: hidden;
 }
 
+.nav-hamburger-close {
+  visibility: hidden;
+}
+
+.nav-side-menu {
+  visibility: hidden;
+}
+
 .nav-bar {
   background-color: rgba(255, 255, 255, 0.04);
   display: flex;
@@ -148,6 +156,10 @@ p.description {
     left: 35px;
   }
 
+  .nav-hr {
+    visibility: hidden;
+  }
+
   .nav-hamburger {
     position: absolute;
     right: 35px;
@@ -155,8 +167,46 @@ p.description {
     visibility: visible;
   }
 
+  .nav-hamburger-close {
+    position: fixed;
+    right: 38px;
+    top: 38px;
+    /* visibility: visible; */
+  }
+
   .nav-bar {
     visibility: hidden;
+  }
+
+  .nav-side-menu {
+    background: linear-gradient(to right bottom, rgb(11, 13, 23, .9), rgba(208, 214, 249, .9) 180%);
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 65%;
+    /* visibility: visible; */
+  }
+
+  .nav-side-menu::before {
+    background-color: rgba(255, 255, 255, 0.04);
+    filter: blur(1px);
+    bottom: 0;
+    position: inherit;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .nav-side-menu-content {
+    position: relative;
+    padding-left: 15%;
+    top: 145px
+  }
+
+  .nav-text {
+    margin: 0 0 50px 0;
+    text-decoration: none;
   }
 
   .bottom-container {
@@ -224,7 +274,7 @@ p.description {
   }
 
   .nav-hr {
-    display: none;
+    visibility: hidden;
   }
 
   .nav-hamburger {
