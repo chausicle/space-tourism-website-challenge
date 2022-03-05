@@ -27,7 +27,11 @@ body {
 }
 
 .nav-side-menu {
+  opacity: 0;
+  transition-duration: 3s;
+  transition-property: opacity, visibility, width;
   visibility: hidden;
+  width: 0;
 }
 
 .nav-bar {
@@ -171,7 +175,6 @@ p.description {
     position: fixed;
     right: 38px;
     top: 38px;
-    /* visibility: visible; */
   }
 
   .nav-bar {
@@ -185,7 +188,8 @@ p.description {
     right: 0;
     top: 0;
     width: 65%;
-    /* visibility: visible; */
+    transition-duration: .25s;
+    transition-property: opacity, visibility, width;
   }
 
   .nav-side-menu::before {
