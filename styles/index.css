@@ -187,9 +187,10 @@ p.description {
     position: absolute;
     right: 0;
     top: 0;
-    width: 65%;
     transition-duration: .25s;
     transition-property: opacity, visibility, width;
+    visibility: hidden;
+    width: 50%;
   }
 
   .nav-side-menu::before {
