@@ -5,7 +5,6 @@ window.addEventListener("DOMContentLoaded", (e) => {
   const navHamburgerClose = document.querySelector("svg.nav-hamburger-close");
   navHamburger.addEventListener("click", openSideMenu);
   navHamburgerClose.addEventListener("click", closeSideMenu);
-  // document.addEventListener('click')
 });
 
 function openSideMenu(event) {
@@ -13,11 +12,9 @@ function openSideMenu(event) {
   const hamburgerClose = document.querySelector("svg.nav-hamburger-close");
   const hamburger = document.querySelector("svg.nav-hamburger");
 
-  hamburger.style.visibility = "hidden";
-  sidemenu.style.visibility = "visible";
-  sidemenu.style.opacity = 1;
-  sidemenu.style.width = '65%';
-  hamburgerClose.style.visibility = "visible";
+  hamburger.classList.replace("show", "hide");
+  sidemenu.classList.replace("close-menu", "open-menu");
+  hamburgerClose.classList.replace("hide", "show");
 }
 
 function closeSideMenu(event) {
@@ -25,9 +22,7 @@ function closeSideMenu(event) {
   const hamburgerClose = document.querySelector("svg.nav-hamburger-close");
   const hamburger = document.querySelector("svg.nav-hamburger");
 
-  hamburger.style.visibility = "visible";
-  sidemenu.style.visibility = "hidden";
-  sidemenu.style.opacity = 0;
-  sidemenu.style.width = '50%';
-  hamburgerClose.style.visibility = "hidden";
+  hamburger.classList.replace("hide", "show");
+  sidemenu.classList.replace("open-menu", "close-menu");
+  hamburgerClose.classList.replace("show", "hide");
 }

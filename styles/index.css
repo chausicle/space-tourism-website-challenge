@@ -27,11 +27,7 @@ body {
 }
 
 .nav-side-menu {
-  opacity: 0;
-  transition-duration: 3s;
-  transition-property: opacity, visibility, width;
   visibility: hidden;
-  width: 0;
 }
 
 .nav-bar {
@@ -177,6 +173,14 @@ p.description {
     top: 38px;
   }
 
+  .hide {
+    visibility: hidden;
+  }
+
+  .show {
+    visibility: visible;
+  }
+
   .nav-bar {
     visibility: hidden;
   }
@@ -184,6 +188,7 @@ p.description {
   .nav-side-menu {
     background: linear-gradient(to right bottom, rgb(11, 13, 23, .9), rgba(208, 214, 249, .9) 180%);
     bottom: 0;
+    opacity: 0;
     position: absolute;
     right: 0;
     top: 0;
@@ -191,6 +196,18 @@ p.description {
     transition-property: opacity, visibility, width;
     visibility: hidden;
     width: 50%;
+  }
+
+  .close-menu {
+    opacity: 0;
+    visibility: hidden;
+    width: 50%;
+  }
+
+  .open-menu {
+    opacity: 1;
+    visibility: visible;
+    width: 65%;
   }
 
   .nav-side-menu::before {
