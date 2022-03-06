@@ -230,6 +230,7 @@ p.description {
     right: 35px;
     top: 38px;
     visibility: visible;
+    z-index: 1;
   }
 
   .nav-hamburger-close {
