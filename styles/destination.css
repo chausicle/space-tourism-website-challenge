@@ -61,11 +61,6 @@ h5 {
   margin-right: 5px;
 }
 
-.nav-active {
-  border-top: 3px solid rgba(255, 255, 255, 0);
-  border-bottom: 3px solid #ffffff;
-}
-
 .bottom-container {
   display: flex;
   justify-content: space-between;
@@ -96,12 +91,18 @@ h5 {
 }
 
 .destination-nav-text {
-  color: #ffffff;
+  color: #d0d6f9;
   border-top: 3px solid rgba(255, 255, 255, 0);
   margin: 0 15px;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.nav-active {
+  border-top: 3px solid rgba(255, 255, 255, 0);
+  border-bottom: 3px solid #ffffff;
+  color: #ffffff;
 }
 
 .destination-nav-text:hover {
@@ -171,4 +172,84 @@ p.description {
   font-family: "Bellefair", serif;
   font-size: 1.75rem;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 1080px) and (min-width: 800px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  body {
+    background: center/cover
+      url("../assets/destination/background-destination-tablet.jpg");
+    background-attachment: fixed;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+    text-align: left;
+  }
+
+  .logo {
+    top: 25px;
+    left: 35px;
+  }
+
+  .nav-hr {
+    display: none;
+  }
+
+  .nav-bar {
+    top: 0;
+    width: 65%;
+    z-index: 3;
+  }
+
+  .nav-bar::before {
+    width: 100%;
+    z-index: 2;
+  }
+
+  .nav-number {
+    display: none;
+  }
+
+  .nav-text {
+    font-size: 0.875rem;
+    margin: 0 15px;
+  }
+
+  .bottom-container {
+    display: block;
+    padding: 0 34px;
+    top: 135px;
+    z-index: 1;
+  }
+
+  .section-left {
+    text-align: center;
+  }
+
+  .section-right {
+    margin: 60px auto 0;
+    padding: 0 0 60px 0;
+    text-align: center;
+    width: 85%;
+  }
+
+  .planet-image {
+    padding: 60px 0 0;
+  }
+
+  .destination-nav {
+    justify-content: center;
+  }
 }

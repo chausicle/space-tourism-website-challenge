@@ -186,13 +186,17 @@ p.description {
   }
 
   .nav-side-menu {
-    background: linear-gradient(to right bottom, rgb(11, 13, 23, .9), rgba(208, 214, 249, .9) 180%);
+    background: linear-gradient(
+      to right bottom,
+      rgb(11, 13, 23, 0.9),
+      rgba(208, 214, 249, 0.9) 180%
+    );
     bottom: 0;
     opacity: 0;
     position: absolute;
     right: 0;
     top: 0;
-    transition-duration: .25s;
+    transition-duration: 0.25s;
     transition-property: opacity, visibility, width;
     visibility: hidden;
     width: 50%;
@@ -223,7 +227,7 @@ p.description {
   .nav-side-menu-content {
     position: relative;
     padding-left: 15%;
-    top: 145px
+    top: 145px;
   }
 
   .nav-text {
@@ -273,8 +277,16 @@ p.description {
   }
 }
 
-
 @media screen and (max-width: 1080px) and (min-width: 800px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
   body {
     background: center/cover url("../assets/home/background-home-tablet.jpg");
     background-attachment: fixed;
@@ -296,7 +308,7 @@ p.description {
   }
 
   .nav-hr {
-    visibility: hidden;
+    display: none;
   }
 
   .nav-hamburger {
