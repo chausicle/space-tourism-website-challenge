@@ -411,6 +411,7 @@ p.description {
   .nav-text {
     font-size: 0.875rem;
     margin: 0 15px;
+    z-index: 3;
   }
 
   .bottom-container {
