@@ -1,3 +1,12 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 body {
   background: center/cover url("../assets/crew/background-crew-desktop.jpg");
   background-attachment: fixed;
@@ -18,8 +27,20 @@ h5 {
   position: absolute;
   top: 90px;
   right: 795px;
-  z-index: 1;
+  z-index: 2;
   left: 170px;
+}
+
+.nav-hamburger {
+  visibility: hidden;
+}
+
+.nav-hamburger-close {
+  visibility: hidden;
+}
+
+.nav-side-menu {
+  visibility: hidden;
 }
 
 .nav-bar {
@@ -32,6 +53,7 @@ h5 {
   top: 50px;
   text-align: center;
   width: 830px;
+  z-index: 3;
 }
 
 .nav-bar::before {
@@ -71,6 +93,7 @@ h5 {
   padding: 0 170px;
   position: relative;
   top: 15rem;
+  z-index: 2;
 }
 
 .crew-heading {
@@ -102,6 +125,7 @@ h5 {
 
 .crew-navbar {
   margin-top: 8rem;
+  margin-bottom: 50px;
 }
 
 .crew-nav-link {
@@ -126,7 +150,160 @@ h5 {
   opacity: 0.5;
 }
 
-@media screen and (max-width: 800) {
+@media screen and (max-width: 800px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+
+  body {
+    background: center/cover url("../assets/crew/background-crew-mobile.jpg");
+    background-attachment: fixed;
+  }
+
+  .logo {
+    top: 25px;
+    left: 25px;
+  }
+
+  .nav-hr {
+    display: none;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .nav-hamburger {
+    position: absolute;
+    right: 25px;
+    top: 38px;
+    visibility: visible;
+    z-index: 1;
+  }
+
+  .nav-hamburger-close {
+    position: fixed;
+    right: 38px;
+    top: 38px;
+  }
+
+  .hide {
+    visibility: hidden;
+  }
+
+  .show {
+    visibility: visible;
+  }
+
+  .nav-bar {
+    visibility: hidden;
+  }
+
+  .nav-side-menu {
+    background: linear-gradient(
+      to right bottom,
+      rgb(11, 13, 23, 0.9),
+      rgba(208, 214, 249, 0.9) 180%
+    );
+    bottom: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition-duration: 0.25s;
+    transition-property: opacity, visibility, width;
+    visibility: hidden;
+    width: 50%;
+  }
+
+  .close-menu {
+    opacity: 0;
+    visibility: hidden;
+    width: 50%;
+  }
+
+  .open-menu {
+    opacity: 1;
+    visibility: visible;
+    width: 65%;
+  }
+
+  .nav-side-menu::before {
+    background-color: rgba(255, 255, 255, 0.04);
+    filter: blur(1px);
+    bottom: 0;
+    position: inherit;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .nav-side-menu-content {
+    position: relative;
+    padding-left: 15%;
+    top: 145px;
+  }
+
+  .nav-text {
+    margin: 0 0 50px 0;
+    text-decoration: none;
+  }
+
+  .bottom-container {
+    display: block;
+    padding: 0 25px;
+    text-align: center;
+    top: 75px;
+  }
+
+  .crew-heading {
+    font-size: 1rem;
+    line-height: 19.2px;
+    letter-spacing: 2.7px;
+    margin: 25px 0 30px 0;
+  }
+
+  .mobile-hr {
+    position: relative;
+    top: -5px;
+    border-top: 0;
+    margin-top: 0;
+  }
+
+  .crew-heading-title {
+    font-size: 1rem;
+    line-height: 18.34px;
+    margin-bottom: 15px;
+  }
+
+  .crew-heading-name {
+    font-size: 1.5rem;
+    line-height: 27.5px;
+  }
+
+  p.crew-description {
+    font-size: 0.9375rem;
+    line-height: 25px;
+    width: auto;
+  }
+
+  .crew-nav-link {
+    height: 10px;
+    width: 10px;
+  }
+
+  .crew-navbar {
+    margin: 30px 0;
+  }
+
+  .crew-image {
+    width: 177.12px;
+  }
 }
 
 @media screen and (max-width: 1080px) and (min-width: 800px) {
