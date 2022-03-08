@@ -112,6 +112,12 @@ h5 {
   text-transform: uppercase;
 }
 
+.destination-nav-active {
+  border-top: 3px solid rgba(255, 255, 255, 0);
+  border-bottom: 3px solid #ffffff;
+  color: #ffffff;
+}
+
 .nav-active {
   border-top: 3px solid rgba(255, 255, 255, 0);
   border-bottom: 3px solid #ffffff;
@@ -213,8 +219,8 @@ p.description {
   }
 
   .logo {
-    top: 25px;
-    left: 35px;
+    left: 24px;
+    top: 24px;
   }
 
   .nav-hr {
@@ -227,7 +233,7 @@ p.description {
 
   .nav-hamburger {
     position: absolute;
-    right: 35px;
+    right: 25px;
     top: 38px;
     visibility: visible;
     z-index: 1;
@@ -235,7 +241,7 @@ p.description {
 
   .nav-hamburger-close {
     position: fixed;
-    right: 38px;
+    right: 25px;
     top: 38px;
   }
 
@@ -297,8 +303,22 @@ p.description {
   }
 
   .nav-text {
-    margin: 0 0 50px 0;
+    height: 30px;
+    letter-spacing: 2.7px;
+    line-height: 19.2px;
+    margin: 0 0 32px 0;
     text-decoration: none;
+  }
+
+  .nav-text:hover {
+    border-top: 0;
+    border-bottom: 0;
+  }
+  
+  .nav-active {
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 4px solid #fff;
   }
 
   .bottom-container {

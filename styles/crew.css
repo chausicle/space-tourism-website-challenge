@@ -166,8 +166,8 @@ h5 {
   }
 
   .logo {
-    top: 25px;
-    left: 25px;
+    left: 24px;
+    top: 24px;
   }
 
   .nav-hr {
@@ -251,8 +251,22 @@ h5 {
   }
 
   .nav-text {
-    margin: 0 0 50px 0;
+    height: 30px;
+    letter-spacing: 2.7px;
+    line-height: 19.2px;
+    margin: 0 0 32px 0;
     text-decoration: none;
+  }
+
+  .nav-text:hover {
+    border-top: 0;
+    border-bottom: 0;
+  }
+  
+  .nav-active {
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 4px solid #fff;
   }
 
   .bottom-container {
