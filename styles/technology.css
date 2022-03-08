@@ -166,6 +166,164 @@ h5 {
       url("../assets/technology/background-technology-mobile.jpg");
     background-attachment: fixed;
   }
+
+  .logo {
+    left: 24px;
+    top: 24px;
+  }
+
+  .nav-hr {
+    display: none;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .nav-hamburger {
+    position: absolute;
+    right: 25px;
+    top: 38px;
+    visibility: visible;
+    z-index: 1;
+  }
+
+  .nav-hamburger-close {
+    position: fixed;
+    right: 25px;
+    top: 38px;
+  }
+
+  .hide {
+    visibility: hidden;
+  }
+
+  .show {
+    visibility: visible;
+  }
+
+  .nav-bar {
+    visibility: hidden;
+  }
+
+  .nav-side-menu {
+    background: linear-gradient(
+      to right bottom,
+      rgb(11, 13, 23, 0.9),
+      rgba(208, 214, 249, 0.9) 180%
+    );
+    bottom: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition-duration: 0.25s;
+    transition-property: opacity, visibility, width;
+    visibility: hidden;
+    width: 50%;
+    z-index: 3;
+  }
+
+  .close-menu {
+    opacity: 0;
+    visibility: hidden;
+    width: 50%;
+  }
+
+  .open-menu {
+    opacity: 1;
+    visibility: visible;
+    width: 65%;
+  }
+
+  .nav-side-menu::before {
+    background-color: rgba(255, 255, 255, 0.04);
+    filter: blur(1px);
+    bottom: 0;
+    position: inherit;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .nav-side-menu-content {
+    position: relative;
+    padding-left: 15%;
+    top: 145px;
+  }
+
+  .nav-text {
+    margin: 0 0 50px 0;
+    text-decoration: none;
+  }
+
+  .bottom-container {
+    top: 100px;
+    padding: 0;
+  }
+
+  .technology-heading {
+    font-size: 1.25rem;
+    letter-spacing: 3.38px;
+    line-height: 24px;
+    margin: 0 0 32px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .technology-body {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .technology-image {
+    margin: 0 0 34px;
+    width: 100%;
+  }
+
+  .technology-content {
+    align-items: center;
+    flex-direction: column;
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .technology-navbar {
+    display: flex;
+    margin-bottom: 26px;
+    padding-right: 0;
+  }
+
+  .technology-nav {
+    height: 40px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 18.34px;
+    margin: 0 8px 0;
+    width: 40px;
+  }
+
+  .subheading {
+    font-size: 0.875rem;
+    letter-spacing: 2.36px;
+    line-height: 16.8px;
+    margin-bottom: 9px;
+  }
+
+  .terminology-heading {
+    font-size: 1.5rem;
+    line-height: 27.5px;
+    margin-bottom: 16px;
+  }
+
+  p.terminology-description {
+    font-size: 0.9375rem;
+    line-height: 25px;
+    margin: 0 24px;
+    padding: 0 0 50px;
+    width: auto;
+  }
 }
 
 @media screen and (max-width: 1080px) and (min-width: 800px) {
