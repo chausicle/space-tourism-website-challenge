@@ -188,7 +188,7 @@ h5 {
 
   .nav-hamburger-close {
     position: fixed;
-    right: 38px;
+    right: 25px;
     top: 38px;
   }
 
@@ -219,6 +219,7 @@ h5 {
     transition-property: opacity, visibility, width;
     visibility: hidden;
     width: 50%;
+    z-index: 3;
   }
 
   .close-menu {

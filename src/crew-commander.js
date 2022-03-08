@@ -5,6 +5,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const crewHeadingTitle = document.querySelector("h4.crew-heading-title");
   const mobileNavContainer = document.createElement("div");
   const hr = document.createElement("hr");
+  const navHamburger = document.querySelector("svg.nav-hamburger");
+  const navHamburgerClose = document.querySelector("svg.nav-hamburger-close");
+  navHamburger.addEventListener("click", openSideMenu);
+  navHamburgerClose.addEventListener("click", closeSideMenu);
   mobileNavContainer.setAttribute("class", "mobile-nav");
   hr.setAttribute("class", "mobile-hr");
 
@@ -47,17 +51,37 @@ function onResize() {
     }
   } else if (window.innerWidth <= 800) {
     crewImage.src = "assets/crew/image-douglas-hurley.webp";
-    if(!mobileNavContainer) {
+    if (!mobileNavContainer) {
       const mobileNavContainer = document.createElement("div");
       const hr = document.createElement("hr");
       mobileNavContainer.setAttribute("class", "mobile-nav");
       hr.setAttribute("class", "mobile-hr");
-      crewNavbar.remove()
-      crewImage.remove()
-      mobileNavContainer.appendChild(crewImage)
-      mobileNavContainer.appendChild(hr)
-      mobileNavContainer.appendChild(crewNavbar)
+      crewNavbar.remove();
+      crewImage.remove();
+      mobileNavContainer.appendChild(crewImage);
+      mobileNavContainer.appendChild(hr);
+      mobileNavContainer.appendChild(crewNavbar);
       crewUpperContainer.insertBefore(mobileNavContainer, crewHeadingTitle);
     }
   }
+}
+
+function openSideMenu(event) {
+  const sidemenu = document.querySelector("div.nav-side-menu");
+  const hamburgerClose = document.querySelector("svg.nav-hamburger-close");
+  const hamburger = document.querySelector("svg.nav-hamburger");
+
+  hamburger.classList.replace("show", "hide");
+  sidemenu.classList.replace("close-menu", "open-menu");
+  hamburgerClose.classList.replace("hide", "show");
+}
+
+function closeSideMenu(event) {
+  const sidemenu = document.querySelector("div.nav-side-menu");
+  const hamburgerClose = document.querySelector("svg.nav-hamburger-close");
+  const hamburger = document.querySelector("svg.nav-hamburger");
+
+  hamburger.classList.replace("hide", "show");
+  sidemenu.classList.replace("open-menu", "close-menu");
+  hamburgerClose.classList.replace("show", "hide");
 }
